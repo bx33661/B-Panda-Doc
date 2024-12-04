@@ -35,16 +35,20 @@ export default defineConfig({
       link: '/docc/'
     },
     {
+      text:'👀网站监控系统',
+      link:'/monitor/'
+    },
+    {
       text: '😄关于我',
       link: '/about.md'
-    }
+    },
   ],
 
     sidebar: autoGenerateSidebar() as any,
 
     // 编辑
     editLink: {
-      pattern: 'https://github.com/shoppingzh/vitepress-template/edit/main/docs/:path',
+      pattern: 'https://github.com/bx33661/B-Panda',
       text: '在Github编辑',
     },
 
