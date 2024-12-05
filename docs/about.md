@@ -6,7 +6,7 @@
 
 ## 关于 - BX
 
-![img](http://82.156.230.245/upload/default8.jpg)
+![img](https://gitee.com/bx33661/image/raw/master/path/default8.jpg)
 
 > 一起见证星辰大海！！！
 

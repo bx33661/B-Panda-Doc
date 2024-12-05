@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
-import { autoGenerateSidebar } from 'press-util'
+//import { autoGenerateSidebar } from 'press-util'
 import vite from './vite.config'
+import theme from './theme'
 
 export default defineConfig({
   base: '/',
@@ -44,18 +45,49 @@ export default defineConfig({
     },
   ],
 
-    sidebar: autoGenerateSidebar() as any,
+  // 手动配置 sidebar
+  sidebar: {
+    // 当用户位于 'docc' 目录时，会显示此侧边栏
+    '/docc/': [
+      {
+        text: '文档工具',
+        items: [
+          { text: 'BTools', link: '/docc/BTools.md' },
+          { text: '蓝图开发模式', link: '/docc/Blueprint.md' },
+          { text: 'Vitepress搭建记录', link: '/docc/Vitepress.md' },
+          { text: 'App主路由', link: '/docc/app.md' },
+          { text: '路由模块', link: '/docc/routes.md' },
+          { text: '样式风格', link: '/docc/style.md' },
+          { text: '功能模块', link: '/docc/utils.md' },
+          { text: '介绍', link: '/docc/index.md' }
+        ]
+      }
+    ],
 
-    // 编辑
-    editLink: {
-      pattern: 'https://github.com/bx33661/B-Panda',
-      text: '在Github编辑',
-    },
+    // 当用户位于 'monitor' 目录时，会显示此侧边栏
+    '/monitor/': [
+      {
+        text: '监控文档',
+        items: [
+          { text: '介绍', link: '/monitor/index.md' },
+          { text: '代码分析', link: '/monitor/jiesao.md' }
+        ]
+      }
+    ]
+  },
 
-    // 搜索
-    search: {
-      provider: 'local',
-    },
+  // 编辑链接
+  editLink: {
+    pattern: 'https://github.com/bx33661/B-Panda',
+    text: '在Github编辑',
+  },
+
+  // 搜索
+  search: {
+    provider: 'local',
+  },
+  
+  // 在这里添加右大括号
   },
   vite,
 })
