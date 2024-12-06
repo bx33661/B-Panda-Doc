@@ -1,6 +1,7 @@
 <meta name="referrer" content="no-referrer">
-
 ## Vitepress
+
+[[TOC]]
 
 > @Author:bx33661
 >
@@ -75,3 +76,76 @@ npm run docs:dev
 
 就是各种插件和基本配置已经完成了，你只需要稍微修改就行，就是不需要自己造轮子了
 
+
+
+### 侧边栏操作
+
+1. 可以采用自动生成侧边栏的插件
+
+https://vitepress-sidebar.cdget.com/zhHans/
+
+![image-20241205182759989](https://gitee.com/bx33661/image/raw/master/path/image-20241205182759989.png)
+
+2. 官方文档自己配置
+
+在`themeconfig`中,根据路由自动设置
+
+下面是一个多级侧边栏示例：
+
+```yaml
+sidebar: {
+    // 当用户位于 'docc' 目录时，会显示此侧边栏
+    '/docc/': [
+      {
+        text: 'BTool文档',
+        items: [
+          { text: '介绍', link: '/docc/index.md' },
+          { text: 'BTools', link: '/docc/BTools.md' },
+          { text: '蓝图开发模式', link: '/docc/Blueprint.md' },
+          { text: 'Vitepress搭建记录', link: '/docc/Vitepress.md' },
+          { text: 'Docker部署记录',link:'/docc/docker.md'},
+          { text: 'App主路由', link: '/docc/app.md' },
+          { text: '路由模块', link: '/docc/routes.md' },
+          { text: '样式风格', link: '/docc/style.md' },
+          { text: '功能模块', link: '/docc/utils.md' },
+        ]
+      }
+    ],
+```
+
+
+
+### 多样化操作
+
+> 主要列一下我经常使用的一些方案
+
+- 支持emoji
+- 支持目录表
+
+```markdown
+[[TOC]]
+```
+
+- GitHub风格警报
+
+```markdown
+> [!NOTE]
+> 强调用户在快速浏览文档时也不应忽略的重要信息。
+
+> [!TIP]
+> 有助于用户更顺利达成目标的建议性信息。
+
+> [!IMPORTANT]
+> 对用户达成目标至关重要的信息。
+
+> [!WARNING]
+> 因为可能存在风险，所以需要用户立即关注的关键内容。
+
+> [!CAUTION]
+> 行为可能带来的负面影响。
+```
+
+![image-20241205184120121](https://gitee.com/bx33661/image/raw/master/path/image-20241205184120121.png)
+
+- 代码高亮
+- ....
