@@ -20,7 +20,7 @@
 
 ![image-20241203211546785](https://gitee.com/bx33661/image/raw/master/path/image-20241203211546785.png)
 
-![网络工具页面](C:/Users/lenovo/Desktop/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7%E9%A1%B5%E9%9D%A2.png)
+![image-20241207115641019](https://gitee.com/bx33661/image/raw/master/path/image-20241207115641019.png)
 
 ![系统资源监控页面](https://gitee.com/bx33661/image/raw/master/path/%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9B%91%E6%8E%A7%E9%A1%B5%E9%9D%A2.png)
 
